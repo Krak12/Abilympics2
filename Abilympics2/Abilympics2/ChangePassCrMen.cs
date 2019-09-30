@@ -16,5 +16,26 @@ namespace Abilympics2
         {
             InitializeComponent();
         }
+
+        //закрытие формы
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        /*сохранение значения пароля в переменную ChangePassCrMen 
+        и переход на форму CreatorMenu*/
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Data.ChangePassCrMen = textBox3.Text;
+            Form crm = new CreatorMenu();
+            Hide();
+            DialogResult res = crm.ShowDialog();
+            if (res != DialogResult.Cancel)
+            {
+                Show();
+            }
+            else Close();
+        }
     }
 }

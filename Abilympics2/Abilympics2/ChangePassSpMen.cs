@@ -16,5 +16,26 @@ namespace Abilympics2
         {
             InitializeComponent();
         }
+
+        //закрытие формы
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        /*сохранение значения пароля в переменную ChangePassCrMen 
+        и переход на форму CreatorMenu*/
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Data.ChangePassSpMen = textBox3.Text;
+            Form spm = new SpecialistMenu();
+            Hide();
+            DialogResult res = spm.ShowDialog();
+            if (res != DialogResult.Cancel)
+            {
+                Show();
+            }
+            else Close();
+        }
     }
 }

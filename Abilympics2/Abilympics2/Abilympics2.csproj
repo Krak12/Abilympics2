@@ -90,6 +90,12 @@
     <Compile Include="TechnicianMenu.Designer.cs">
       <DependentUpon>TechnicianMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChangePassCrMen.resx">
+      <DependentUpon>ChangePassCrMen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassSpMen.resx">
+      <DependentUpon>ChangePassSpMen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreatorMenu.resx">
       <DependentUpon>CreatorMenu.cs</DependentUpon>
     </EmbeddedResource>

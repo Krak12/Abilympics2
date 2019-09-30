@@ -31,5 +31,22 @@ namespace Abilympics2
             this.ordersTableAdapter.Fill(this.dbDataSet.Orders);
 
         }
+
+        //переходы по tabPage
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage1;
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage2;
+        }
+
+        //закрытие формы
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
